@@ -1,0 +1,177 @@
+body {
+  background: linear-gradient(135deg, #e0f7fa, #f0f9ff);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Header jQuery Mobile */
+#booking .ui-header {
+  background: linear-gradient(to right, #4361ee, #3a0ca3) !important;
+  color: white !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#booking .ui-header h1 {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Kotak utama borang */
+.booking-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px;
+  box-shadow: 0 6px 20px rgba(67, 97, 238, 0.15);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Input & Dropdown */
+.form-control,
+.form-select {
+  border: 2px solid #e0e7ff;
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+  outline: none;
+}
+
+/* Butang Confirm */
+.btn-confirm {
+  background: linear-gradient(to right, #4361ee, #4cc9f0);
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 16px;
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-confirm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(67, 97, 238, 0.5);
+}
+
+/* Butang Back */
+.btn-back {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  color: #4361ee;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 12px;
+  background: #f0f4ff;
+  transition: background 0.2s;
+}
+
+.btn-back:hover {
+  background: #e0eaff;
+}
+
+/* Responsif untuk telefon */
+@media (max-width: 480px) {
+  .booking-card {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .btn-confirm {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+/* 🌄 Fullscreen travel background with blur and dark overlay */
+.travel-bg {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')
+    no-repeat center center / cover;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  
+}
+
+/* Overlay for additional darkening */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* Login box with higher contrast */
+.login-box-travel {
+  position: absolute;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  width: 85%;
+  max-width: 360px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Title style */
+.logo-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 30px;
+}
+
+
+/* 🏠 HOME PAGE */
+.navbar {
+  font: 'Georgia', 'Times New Roman', serif;
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.logo {
+  color: #ffffff;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px; 
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
